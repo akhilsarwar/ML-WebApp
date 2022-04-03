@@ -1,13 +1,135 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  display:flex;
+  position: static;
+  /* margin :auto; */
+  
+  background-image: linear-gradient(rgb(57,22,51), rgb(8,39,96));
+}
+#root{
+  /* margin:auto; */
+  padding:360px;
+  /* margin:200px; */
+  align-items:center;
+  text-align:center;
+}
+p{
+  position: static;
+  width: 80px;
+  height: 24px;
+  left: 24px;
+  top: 10.5px;
+
+  /* Label/Label 1 - Semibold */
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+  font-feature-settings: 'salt' on, 'liga' off;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+.fclass{
+  /* margin: auto; */
+  align-items:center;
+  text-align:center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.rrect{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 66px 189px;
+
+  position: absolute;
+  width: 285px;
+  height: 159px;
+
+  background: #F3ECEC;
+  border: 1px dashed #454545;
+  border-radius: 25px;
+}
+
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 24px;
+
+  position: static;
+  width: 150px;
+  height: 45px;
+  left: 78.5px;
+  top: 91px;
+
+  /* Brand color/Deep Blue */
+
+  background: #0432DF;
+  /* Brand color/Deep Blue */
+
+  border: 1px solid #0432DF;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 6px 0px;
+  color:#FFFFFF;
+}
+
+.upscv{
+  position: static;
+  width: 87px;
+  height: 22px;
+  left: 99px;
+  top: 63px;
+
+  /* Subtitle/Subtitle 3 - Medium */
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 138%;
+  /* identical to box height, or 22px */
+
+  text-align: center;
+  letter-spacing: -0.05em;
+  font-feature-settings: 'salt' on, 'liga' off;
+
+  /* Font color/Description Dark */
+
+  color: #4C526A;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 6px 0px;
+}
+
+.fdd{
+  align-items:center;
+  text-align:center;
 }
