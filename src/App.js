@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="form-label" style={{ textAlign: "center" }}>
+        <p></p>
+        <form method="POST" action="http://localhost:5000/result" enctype="multipart/form-data"> 
+            <input type="file" name="file" class="form-control form-control-lg"/>
+            <p></p>
+            <button class="btn btn-secondary">IMPORT CSV2</button>
+        </form>
     </div>
-  );
+    )
 }
 
 export default App;
+
