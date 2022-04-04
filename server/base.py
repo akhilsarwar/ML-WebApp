@@ -1,13 +1,17 @@
-from flask import Flask, render_template, request, redirect, abort
+from crypt import methods
+from flask import Flask, render_template, request, redirect, abort, send_from_directory
 import pandas as pd
+from flask_cors import CORS
 import pickle
 
 app = Flask(__name__)
+CORS(app)
+
+app.config["CLIENT_CSV"] = "."
 
 
 @app.route('/result', methods=['GET', 'POST'])
 def result():
-    # data = []
     if request.method == 'POST':
         if request.files:
             uploaded_file = request.files['file']
@@ -23,13 +27,24 @@ def result():
             print(result)
 
             pd.DataFrame({'sentiment': result}).to_csv('./output.csv')
+
             return "success"
-            # return render_template('index.html', tables=[df.to_html()], titles=[''])
 
         else:
             return abort(404)
     else:
         return abort(400)
+
+
+@app.route('/getoutput', methods=['GET'])
+def getoutput():
+    if request.method == 'GET':
+        try:
+            return send_from_directory(directory=app.config["CLIENT_CSV"], path="output.csv", as_attachment=True)
+        except FileNotFoundError:
+            abort(404)
+    else:
+        abort(400)
 
 
 if __name__ == '__main__':
