@@ -1,6 +1,8 @@
 import './Components/HomePage';
 import HomePage from './Components/HomePage';
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Routes, Route, Outlet, Navigate } from "react-router-dom";
+import ReportPage from './Components/ReportPage';
 
 function App() {
   return (
@@ -14,7 +16,12 @@ function App() {
     // </div>
 
     <div>
-      <HomePage />
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<HomePage />}></Route>
+          <Route path='/report' element={<ReportPage />}></Route>
+        </Routes>
+      </Router>
     </div>
   )
 }

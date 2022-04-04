@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@100;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+.background {
+    /* background: linear-gradient(0deg, rgba(2, 13, 55, 0.7), rgba(2, 13, 55, 0.7)); */
+    background-image: url("./images/header-bg.png");
+    min-height: 900px;
+    background-size: 100%;
+    padding-top: 100px;
+
+}
+
+.inter {
+    font-family: 'Inter',
+        sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.poppins {
+    font-family: 'Poppins',
+        sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.title {
+    /* position: relative; */
+    /* width: 490px;
+    height: 53px; */
+    /* background-color: blue; */
+    text-align: center;
+    /* Heading/He
+    adline 3 */
+
+    font-size: 36px;
+    line-height: 146.5%;
+    /* identical to box height, or 53px */
+
+    letter-spacing: -0.02em;
+    /* font-feature-settings: 'salt'on,
+        'liga'off; */
+
+    /* Font color/Title Light */
+
+    color: #EEEEEE;
+}
+
+.description {
+    height: 34px;
+
+    /* Subtitle/Subtitle 1 - Medium */
+    font-size: 20px;
+    line-height: 170%;
+    /* identical to box height, or 34px */
+
+    /* background-color: blue; */
+
+    text-align: center;
+    letter-spacing: -0.05em;
+    /* font-feature-settings: 'salt'on,
+        'liga'off; */
+
+    /* Font color/Description Light */
+
+    color: #ACAFB8;
+}

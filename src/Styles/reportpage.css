@@ -1,0 +1,19 @@
+.button-div {
+    text-align: center;
+}
+
+#t2 {
+    margin-top: 150px;
+}
+
+#bd1 {
+    margin-top: 20px;
+}
+
+#bd2 {
+    margin-top: 100px;
+}
+
+#bd2 button {
+    color: white !important;
+}
