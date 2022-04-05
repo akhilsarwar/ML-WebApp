@@ -15,10 +15,6 @@ function SingleReview() {
         navigate('/', { replace: true });
     }
 
-    console.log(result)
-    console.log(bussinessSugg)
-
-
     return (
         <div className="background">
             <div className="title poppins" id="t1">Review Sentiment

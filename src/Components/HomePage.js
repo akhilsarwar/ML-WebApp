@@ -30,7 +30,6 @@ function HomePage() {
                 data: formData,
                 headers: { "Content-Type": "multipart/form-data" },
             });
-            console.log(response)
             navigate('/report', { replace: true });
         } catch (error) {
             console.log(error)
@@ -40,20 +39,15 @@ function HomePage() {
     const submitReview = async (event) => {
         event.preventDefault();
         var review = event.target[0].value
-        console.log(review);
         setLoading(true)
         try {
-
             const response = await axios({
                 method: "post",
                 url: "http://localhost:5000/result2",
                 data: { review }
             });
             // var res = JSON.parse(response.data);
-            console.log(response.data)
             var res = response.data;
-            console.log(res['result'])
-            console.log(res['bussiness_suggestion'])
             navigate('/singleReview', { state: { result: res['result'], bussinessSuggestion: res['bussiness_suggestion'] }, replace: true });
         } catch (error) {
             console.log(error)

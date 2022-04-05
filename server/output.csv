@@ -1,17 +1,17 @@
 ,sentiment,input,business suggestion
-0,1,good product. really loved it,"The customer really enjoyed buying your product. The service was smooth and the checkout was quick.
+0,1,good product. really loved it,"Congratulations, the customer is in to shop again. Good customer service always puts you in the front.
 "
-1,-1,bad product really hate it,"The service did not acquire a positive reply, have you tried a personalized call to action?
+1,-1,bad product really hate it,"The customer did not leave with a positive experience please try providing a chat feature on your website to help your customers with shopping.
 "
-2,1,this is really awesome. really loved it,"Congratulations, the customer is in to shop again. Good customer service always puts you in the front.
+2,1,this is really awesome. really loved it,"The customer is satisfied with your service. Try to perform more A/B testing to know more about customer needs for improvement.
 "
 3,1,amazing product,"Excellent user experience and customer satisfaction was ensured to the customer.
 "
-4,-1,bad product really hate it,"The customer did not leave with a positive experience please try providing a chat feature on your website to help your customers with shopping.
+4,-1,bad product really hate it,"The customer was not pleased with the store please try pointing out which product is most popular and thus add social proof to the product.
 "
-5,-1,this is really not worth buying,"Your customer is not pleased with the store, in order to understand the customer's needs more please try performing A/B testing.
+5,-1,this is really not worth buying,"The customer is not happy with the service, have you tried decluttering your site navigation?
 "
-6,1,athul,"It was a wonderful experience for your customer. Try tweaking promotional strategies to explore more about the dynamic range of customer satisfaction.
+6,1,athul,"Congratulations, the customer is in to shop again. Good customer service always puts you in the front.
 "
-7,1,hihihih huhuhu,"It was a wonderful experience for your customer. Try tweaking promotional strategies to explore more about the dynamic range of customer satisfaction.
+7,1,hihihih huhuhu,"Congratulations, the customer is in to shop again. Good customer service always puts you in the front.
 "
