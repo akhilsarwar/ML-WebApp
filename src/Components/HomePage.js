@@ -37,6 +37,29 @@ function HomePage() {
         }
     }
 
+    const submitReview = async (event) => {
+        event.preventDefault();
+        var review = event.target[0].value
+        console.log(review);
+        setLoading(true)
+        try {
+
+            const response = await axios({
+                method: "post",
+                url: "http://localhost:5000/result2",
+                data: { review }
+            });
+            // var res = JSON.parse(response.data);
+            console.log(response.data)
+            var res = response.data;
+            console.log(res['result'])
+            console.log(res['bussiness_suggestion'])
+            navigate('/singleReview', { state: { result: res['result'], bussinessSuggestion: res['bussiness_suggestion'] }, replace: true });
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
 
     const changeFile = (event) => {
         setDisplayFileName(true);
@@ -50,12 +73,18 @@ function HomePage() {
             <div className="title poppins">Review Sentiment
                 Analyzer</div>
             <div className="description inter">Input your user reviews to analyze and generate suitable responses</div>
+            {loading &&
+                <div>
+                    <div className="title poppins" id='t2'>Review Sentiment
+                        Analyzer</div>
+                </div>
+            }
             {loading && <LoaderAnim />}
             {!loading &&
                 <div>
                     <div className="inputForm">
-                        <Form>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <form onSubmit={submitReview}>
+                            <Form.Group className="mb-3" controlId="user-review">
                                 <Form.Control type="text" placeholder="Enter User Review" />
                             </Form.Group>
                             <div className="analyzeButton">
@@ -64,7 +93,7 @@ function HomePage() {
                                 </Button>
                             </div>
 
-                        </Form>
+                        </form>
                     </div>
                     <div className="OR poppins">
                         OR

@@ -1,9 +1,17 @@
-,sentiment
-0,1
-1,-1
-2,1
-3,1
-4,-1
-5,-1
-6,1
-7,1
+,sentiment,input,business suggestion
+0,1,good product. really loved it,"The customer really enjoyed buying your product. The service was smooth and the checkout was quick.
+"
+1,-1,bad product really hate it,"The service did not acquire a positive reply, have you tried a personalized call to action?
+"
+2,1,this is really awesome. really loved it,"Congratulations, the customer is in to shop again. Good customer service always puts you in the front.
+"
+3,1,amazing product,"Excellent user experience and customer satisfaction was ensured to the customer.
+"
+4,-1,bad product really hate it,"The customer did not leave with a positive experience please try providing a chat feature on your website to help your customers with shopping.
+"
+5,-1,this is really not worth buying,"Your customer is not pleased with the store, in order to understand the customer's needs more please try performing A/B testing.
+"
+6,1,athul,"It was a wonderful experience for your customer. Try tweaking promotional strategies to explore more about the dynamic range of customer satisfaction.
+"
+7,1,hihihih huhuhu,"It was a wonderful experience for your customer. Try tweaking promotional strategies to explore more about the dynamic range of customer satisfaction.
+"

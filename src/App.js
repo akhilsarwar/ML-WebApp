@@ -3,6 +3,7 @@ import HomePage from './Components/HomePage';
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Routes, Route, Outlet, Navigate } from "react-router-dom";
 import ReportPage from './Components/ReportPage';
+import SingleReview from './Components/SingleReview';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<HomePage />}></Route>
           <Route path='/report' element={<ReportPage />}></Route>
+          <Route path='/singleReview' element={<SingleReview />}></Route>
         </Routes>
       </Router>
     </div>
